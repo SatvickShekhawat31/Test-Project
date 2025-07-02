@@ -49,3 +49,23 @@ python manage.py migrate
 
 # Run server
 python manage.py runserver
+
+✔️ Deployment Plan
+Production ke liye deploy kar sakte hain:
+
+Cloud server (e.g., AWS EC2, DigitalOcean, Render, etc.)
+
+Gunicorn + Nginx for serving Django app securely
+
+Use environment variables for sensitive info (SECRET_KEY, DB credentials, etc.)
+
+Use HTTPS (Let's Encrypt SSL)
+
+Database: SQLite (dev) → upgrade to PostgreSQL (prod)
+
+Static files: AWS S3 / DigitalOcean Spaces ya locally via collectstatic
+
+Optional: Use Docker to containerize the app
+
+
+
