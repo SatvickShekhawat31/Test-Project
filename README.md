@@ -56,6 +56,8 @@ python manage.py runserver
 - Import postman_collection.json into Postman
 - Contains ready-to-use requests: Register, Login, Upload, List, Download etc.
 - Test permissions (only ops can upload, only clients can download)
+- You can test the API using Postman:  
+👉 [**Postman Collection**]([https://satvickshekhawat.postman.co/workspace/Satvick-Shekhawat's-Workspace~9c8abd0f-0f98-4678-8a02-351ce7998976/collection/46373814-e66c51a8-b837-4547-8bc0-d9a411e7b113?action=share&source=collection_link&creator=46373814](https://satvickshekhawat.postman.co/workspace/Satvick-Shekhawat's-Workspace~9c8abd0f-0f98-4678-8a02-351ce7998976/collection/46373814-e66c51a8-b837-4547-8bc0-d9a411e7b113?action=share&source=copy-link&creator=46373814))
 
 ---
 
