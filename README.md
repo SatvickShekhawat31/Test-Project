@@ -51,7 +51,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-✔️ Deployment Plan
+### ✔️ Deployment Plan
 Production ke liye deploy kar sakte hain:
 
 Cloud server (e.g., AWS EC2, DigitalOcean, Render, etc.)
