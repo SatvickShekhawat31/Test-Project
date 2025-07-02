@@ -50,25 +50,67 @@ python manage.py migrate
 # Run server
 python manage.py runserver
 ```
+---
+
+## 🧪 API Testing (Postman)
+- Import postman_collection.json into Postman
+- Contains ready-to-use requests: Register, Login, Upload, List, Download etc.
+- Test permissions (only ops can upload, only clients can download)
+
+---
+
+## ✏ Test Cases
+
+- File: api/tests.py
+- Covers register, login, upload, download, permission checks
+- Run all:
+```bash
+python manage.py test
+```
 
 ---
 
 ## ✔️ Deployment Plan
-Production ke liye deploy kar sakte hain:
 
-Cloud server (e.g., AWS EC2, DigitalOcean, Render, etc.)
+- Cloud server (e.g., AWS EC2, DigitalOcean, Render, etc.)
+- Gunicorn + Nginx for serving Django app securely
+- Use environment variables for sensitive info (SECRET_KEY, DB credentials, etc.)
+- Use HTTPS (Let's Encrypt SSL)
+- Database: SQLite (dev) → upgrade to PostgreSQL (prod)
+- Static files: AWS S3 / DigitalOcean Spaces ya locally via collectstatic 
+- Optional: Use Docker to containerize the app
 
-Gunicorn + Nginx for serving Django app securely
+--- 
 
-Use environment variables for sensitive info (SECRET_KEY, DB credentials, etc.)
+## 🔒 Security
 
-Use HTTPS (Let's Encrypt SSL)
+- Encrypted download URLs
+- Only client users can access download links
+- Ops users can upload but cannot download
 
-Database: SQLite (dev) → upgrade to PostgreSQL (prod)
+---
 
-Static files: AWS S3 / DigitalOcean Spaces ya locally via collectstatic
+## 📂 Project Structure
 
-Optional: Use Docker to containerize the app
-
-
-
+```bash
+testproject/
+├── api/
+│   ├── migrations/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── testproject/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── db.sqlite3
+├── postman_collection.json
+├── requirements.txt
+└── manage.py
+```
