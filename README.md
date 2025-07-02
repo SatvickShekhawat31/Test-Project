@@ -49,6 +49,7 @@ python manage.py migrate
 
 # Run server
 python manage.py runserver
+```
 
 ✔️ Deployment Plan
 Production ke liye deploy kar sakte hain:
