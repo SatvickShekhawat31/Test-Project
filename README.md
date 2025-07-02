@@ -118,4 +118,4 @@ testproject/
 ---
 
 📧 Contact
-- [**Satvick Shekhawat**]([https://your-link.com](https://www.linkedin.com/in/satvick-shekhawat-01450925a/))
+- [**Satvick Shekhawat**] - https://your-link.com](https://www.linkedin.com/in/satvick-shekhawat-01450925a/
