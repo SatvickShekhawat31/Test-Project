@@ -7,7 +7,7 @@ Supports registration, login, file upload (only by Ops users), secure download l
 
 ---
 
-### 🚀 Features
+## 🚀 Features
 - Register & login for Ops and Client users
 - Ops users can upload only `.pptx`, `.docx`, `.xlsx` files
 - Clients get encrypted download links for files
@@ -16,7 +16,7 @@ Supports registration, login, file upload (only by Ops users), secure download l
 
 ---
 
-### API Endpoints (examples)
+## API Endpoints (examples)
 - `POST /api/register/`
 - `POST /api/login/`
 - `GET /api/profile/`
@@ -24,10 +24,10 @@ Supports registration, login, file upload (only by Ops users), secure download l
 - `GET /api/files/`
 - `GET /download/<file_id>/`
 
-### Postman Collection
+## Postman Collection
 Import the JSON file included in this repo to test APIs easily.
 
-### ⚙️ How to run locally
+## ⚙️ How to run locally
 
 ```bash
 # Clone the repo
@@ -51,7 +51,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-### ✔️ Deployment Plan
+---
+
+## ✔️ Deployment Plan
 Production ke liye deploy kar sakte hain:
 
 Cloud server (e.g., AWS EC2, DigitalOcean, Render, etc.)
