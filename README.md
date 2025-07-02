@@ -16,6 +16,17 @@ Supports registration, login, file upload (only by Ops users), secure download l
 
 ---
 
+### API Endpoints (examples)
+- `POST /api/register/`
+- `POST /api/login/`
+- `GET /api/profile/`
+- `POST /api/files/`
+- `GET /api/files/`
+- `GET /download/<file_id>/`
+
+### Postman Collection
+Import the JSON file included in this repo to test APIs easily.
+
 ### ⚙️ How to run locally
 
 ```bash
@@ -38,14 +49,3 @@ python manage.py migrate
 
 # Run server
 python manage.py runserver
-
-## API Endpoints (examples)
-- `POST /api/register/`
-- `POST /api/login/`
-- `GET /api/profile/`
-- `POST /api/files/`
-- `GET /api/files/`
-- `GET /download/<file_id>/`
-
-## Postman Collection
-Import the JSON file included in this repo to test APIs easily.
